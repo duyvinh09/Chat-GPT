@@ -80,25 +80,29 @@
 <section class="container">
    <form class="TI" ></form>
    <h3 style="text-align: center;font-weight: bold;font-size: 25px;color: var(--main-color); padding: 1rem ;"> CHAT BOT AI</h3>
-      <div class="chatbox">
-        <div class="chatlogs">
-          <div class="chat bot">
-            <div class="user-photo"></div>
-            <p class="chat-message">Chào bạn, tôi là bot. Bạn cần giúp gì?</p>
-          </div>
-          <div class="chat user">
-            <div class="user-photo"></div>
-            <p class="chat-message">Bot tạo bởi Đinh Duy Vinh</p>
-          </div>
-        </div>        
-        <div class="chat-form">
-          <div class="input-container">
-            <input type="text" id="input" placeholder="Nhập câu hỏi ở đây..." />
-            <button id="submit-btn">Gửi</button>
-            <button id="clear-btn">Xóa</button>
-          </div>
+   <div class="chatbox">
+      <div class="chatlogs">
+        <div class="chat bot">
+          <div class="user-photo"></div>
+          <p class="chat-message">Chào bạn, tôi là bot. Bạn cần giúp gì?</p>
+        </div>
+        <div class="chat user">
+          <div class="user-photo"></div>
+          <p class="chat-message">Bot tạo bởi Đinh Duy Vinh</p>
         </div>
       </div>
+      <div class="chat-form">
+         <div class="input-container">
+            <input type="text" id="input" placeholder="Nhập câu hỏi ở đây...">
+            <button id="submit-btn" class="send-button">
+               <i class="fa-solid fa-paper-plane fa-bounce fa-xl"></i>
+             </button>
+             <button id="clear-btn" class="clear-button">
+               <i class="fas fa-trash-alt fa-lg"></i>
+             </button>             
+          </div>
+      </div>
+    </div>
 </section>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7280391568439473"crossorigin="anonymous"></script>
 <ins class="adsbygoogle"

@@ -1,6 +1,5 @@
 document.getElementById("submit-btn").addEventListener("click", answer);
-
-document.addEventListener("keydown", function (event) {
+document.addEventListener("keydown", function(event) {
   if (event.code === "Enter") {
     answer();
   }
@@ -53,7 +52,7 @@ function answer() {
   xhr.open("GET", url, true);
   xhr.send();
 
-  xhr.onreadystatechange = function () {
+  xhr.onreadystatechange = function() {
     if (xhr.readyState === 4 && xhr.status === 200) {
       var xhrStrgify = JSON.parse(xhr.responseText);
       var string = xhrStrgify.answer;
@@ -62,7 +61,7 @@ function answer() {
 
       answerChatMessage.textContent = "";
 
-      var intervalId = setInterval(function () {
+      var intervalId = setInterval(function() {
         if (i < charsArray.length) {
           answerChatMessage.textContent += charsArray[i];
           i++;
@@ -72,6 +71,14 @@ function answer() {
       }, 50);
     }
   };
+
+  inputElement.disabled = true; // Disable input while bot is answering
+  document.getElementById("submit-btn").disabled = true; // Disable submit button while bot is answering
+
+  setTimeout(function() {
+    inputElement.disabled = false; // Enable input after bot has answered
+    document.getElementById("submit-btn").disabled = false; // Enable submit button after bot has answered
+  }, 2000); // Adjust the timeout value as needed
 }
 
 const clearBtn = document.getElementById("clear-btn");
