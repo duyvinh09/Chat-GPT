@@ -1631,7 +1631,7 @@ nav a.active {
 }
 
 .chat .chat-message {
-  margin-left: 10px;
+  margin-left: 5px;
   background-color: #f1f0f0;
   padding: 10px;
   border-radius: 10px;
@@ -1651,7 +1651,48 @@ nav a.active {
   border-top-left-radius: 0px;
 }
 
+.chatapp {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-evenly;
+}
 
+.chatlogs {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 400px;
+}
+
+.chat {
+  display: flex;
+  flex-direction: row;
+  align-items: auto;
+  margin-bottom: 10px;
+  max-width: 70%;
+}
+
+.user {
+  align-self: flex-end;
+}
+
+.bot {
+  align-self: flex-start;
+}
+
+.bot-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: left;
+  object-fit: cover;
+}
+
+.bot-photo {
+  background-image: url('https://www.w3schools.com/howto/img_avatar.png');
+}
 
 .input-container {
   display: flex;
@@ -1692,55 +1733,4 @@ nav a.active {
 
 .clear-button {
   margin-left: 5px;
-}
-
-.chatapp {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: flex-end;
-}
-
-.chatlogs {
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
-  height: 390px;
-}
-
-.chat {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: flex-end;
-  margin-bottom: 10px;
-  max-width: 70%;
-}
-
-.user {
-  align-self: flex-start;
-}
-
-.bot {
-  align-self: flex-end;
-}
-
-.bot-photo {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-size: contain;
-  background-position: center;
-}
-
-.user-photo,
-.bot-photo {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-}
-
-.user-photo {
-  background-image: url('https://www.w3schools.com/howto/img_avatar.png');
 }

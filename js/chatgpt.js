@@ -35,14 +35,19 @@ function answer() {
   answerChat.classList.add("chat", "bot");
 
   var answerUserPhoto = document.createElement("div");
-  answerUserPhoto.classList.add("user-photo");
+  answerUserPhoto.classList.add("bot-photo");
 
   var answerChatMessage = document.createElement("p");
   answerChatMessage.classList.add("chat-message");
   answerChatMessage.textContent = "Vui lòng chờ...";
 
+  var botNameSpan = document.createElement("span");
+  botNameSpan.classList.add("bot-name");
+  botNameSpan.textContent = "Bot"; // Tên bot của bạn
+
   answerChat.appendChild(answerUserPhoto);
   answerChat.appendChild(answerChatMessage);
+  answerChat.appendChild(botNameSpan);
 
   chatLogs.appendChild(answerChat);
 
