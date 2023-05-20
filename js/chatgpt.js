@@ -41,12 +41,16 @@ function answer() {
   answerChatMessage.classList.add("chat-message");
   answerChatMessage.textContent = "Vui lòng chờ...";
 
+  var spinnerIcon = document.createElement("span");
+  spinnerIcon.classList.add("spinner", "fas", "fa-spinner", "fa-pulse");
+
   var botNameSpan = document.createElement("span");
   botNameSpan.classList.add("bot-name");
   botNameSpan.textContent = "Bot"; // Tên bot của bạn
 
   answerChat.appendChild(answerUserPhoto);
   answerChat.appendChild(answerChatMessage);
+  answerChat.appendChild(spinnerIcon);
   answerChat.appendChild(botNameSpan);
 
   chatLogs.appendChild(answerChat);
@@ -74,6 +78,8 @@ function answer() {
           clearInterval(intervalId);
         }
       }, 50);
+
+      answerChat.removeChild(spinnerIcon); // Xóa biểu tượng spinner sau khi hoàn thành gửi tin nhắn
     }
   };
 
