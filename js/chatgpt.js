@@ -96,5 +96,12 @@ const clearBtn = document.getElementById("clear-btn");
 
 clearBtn.addEventListener("click", function() {
   const chatlogs = document.querySelector(".chatlogs");
-  chatlogs.innerHTML = "";
+  const chatMessages = chatlogs.querySelectorAll(".chat");
+
+  chatMessages.forEach(function(chatMessage) {
+    if (chatMessage.classList.contains("user") || chatMessage.classList.contains("bot")) {
+      chatlogs.removeChild(chatMessage);
+    }
+  });
 });
+
