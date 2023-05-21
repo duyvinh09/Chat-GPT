@@ -77,34 +77,51 @@
       <a><span style="padding-bottom: 30rem; visibility: hidden;">-</span></a>
    </nav>
 </div>
-<section class="container">
-   <form class="TI" ></form>
-   <h3 style="text-align: center;font-weight: bold;font-size: 25px;color: var(--main-color); padding: 1rem ;"> CHAT BOT AI</h3>
-   <div class="chatbox">
-      <div class="chatlogs">
-        <div class="chat bot">
-          <div class="bot-photo"></div>
-          <p class="chat-message">
-            Chào bạn, tôi là bot. Bạn cần giúp gì?</p>
-        </div>
-        <div class="chat user">
-          <div class="user-photo"></div>
-          <p class="chat-message">Bot tạo bởi Đinh Duy Vinh</p>
-        </div>
-      </div>
-      <div class="chat-form">
-         <div class="input-container">
-            <input type="text" id="input" placeholder="Nhập câu hỏi ở đây...">
-            <button id="submit-btn" class="send-button">
-               <i class="fa-solid fa-paper-plane fa-bounce fa-xl"></i>
-             </button>
-             <button id="clear-btn" class="clear-button">
-               <i class="fas fa-trash-alt fa-lg"></i>
-             </button>             
+<section class="form-container">
+   <form class="TI" method="post">
+      <fieldset>
+        <legend style="text-align: center; font-weight: bold; font-size: 25px; color: var(--main-color); padding: 1rem;">CHAT BOT AI</legend>
+        
+        <div class="chatbox">
+          <div class="chatlogs">
+            <div class="chat bot">
+              <div class="bot-photo"></div>
+              <p class="chat-message">
+                Chào bạn, tôi là bot. Bạn cần giúp gì?</p>
+            </div>
+            <div class="chat user">
+              <div class="user-photo"></div>
+              <p class="chat-message">Bot tạo bởi Đinh Duy Vinh</p>
+            </div>
           </div>
-      </div>
-    </div>
+          
+          <div class="chat-form">
+             <div class="input-container">
+                <input type="text" id="input" placeholder="Nhập câu hỏi ở đây...">
+                <i id="loading-icon" class="fas fa-spinner fa-spin" style="display: none;"></i>
+                <button id="submit-btn" class="send-button">
+                   <i class="fa-solid fa-paper-plane fa-bounce fa-xl"></i>
+                 </button>
+                 <button id="clear-btn" class="clear-button">
+                   <i class="fas fa-trash-alt fa-lg"></i>
+                 </button>             
+              </div>
+          </div>
+        </div>
+      </fieldset>
+    </form>    
 </section>
+<section class="form-container" >
+   <form class="TI" >
+   <h3><i class="fas fa-bell rung"></i> Lưu ý</h3>         
+                  <p>1. Dữ liệu được lấy trực tiếp từ ChatGPT.</p>
+                  <p>2. Tốc độ trả lời nhanh hay chậm phụ thuộc vào độ dài của câu trả lời.</p>
+                  <p>3. Đây là ChatBot trải nghiệm nên đôi lúc lượng truy cập quá đông đẫn đến quá trình load câu trả lời chậm.</p>
+                  <p>4. Để có trải nghiệm tốt hơn bạn có thể sử dụng ChatGPT, bạn chưa có tài khoản ChatGPT để đăng nhập tham khảo bên dưới.</p>
+                  <p style="font-weight: bold;"><img src="https://i.imgur.com/mUD4ZUx.gif"   alt=""> Mua tài khoản ChatGPT <a style="color:red;font-weight: bold;" href="https://zalo.me/duyvinh09" target="_blank" > TẠI ĐÂY </a></p>
+   </form>
+   
+   </section>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7280391568439473"crossorigin="anonymous"></script>
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
@@ -117,7 +134,7 @@
 </script>
 <footer class="footer" >
 
-   Copyright  &copy; 2023 by <span>Đinh Duy Vinh</span> | all rights reserved!
+   Copyright  &copy; 2023 Hệ thống được vận hành và phát triển bởi </span><a href="https://zalo.me/duyvinh09" class="" target="_blank">Đinh Duy Vinh.</a>
 
 </footer>
 <style>

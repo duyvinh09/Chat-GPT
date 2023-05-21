@@ -1670,7 +1670,7 @@ nav a.active {
   flex-direction: row;
   align-items: auto;
   margin-bottom: 10px;
-  max-width: 170000%;
+  max-width: 17000%;
 }
 
 .user {
@@ -1691,7 +1691,7 @@ nav a.active {
 }
 
 .bot-photo {
-  background-image: url('https://i.imgur.com/4aY3jlk.gif');
+  background-image: url('https://i.imgur.com/BXDAJuX.gif');
 }
 
 .input-container {
@@ -1711,6 +1711,39 @@ nav a.active {
   border-radius: 15px;
   font-size: 16px;
   border: 1px solid #d1d1d1;
+}
+
+/* CSS cho khung nhập tin nhắn */
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper input {
+  padding-right: 40px; /* Để chừa không gian cho spinner */
+}
+
+.input-wrapper .spinner {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: none; /* Ẩn ban đầu */
+}
+
+.input-wrapper .spinner::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-top-color: #333;
+  border-radius: 50%;
+  animation: spinner 0.6s linear infinite;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .send-button {
